@@ -1,3 +1,4 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");*/
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -20,12 +21,16 @@
     background-color: lightgray;
     height: 500px;
     margin-top: 1px;
-    position: fixed;
+    position: fixed; 
     
 }
 h1{
+    font-family:'Tangerine', serif;
+    font-size: 48px;
+    align-items: center;
     
 }
+
 .box2 {
     display: flex;
     flex-wrap: wrap;
