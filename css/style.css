@@ -100,7 +100,6 @@ img {
     cursor: pointer; /* Cambia el cursor al pasar por encima para indicar que es interactivo */
 }
 .menu{
-    /*background-color: brown;*/
     width: 100%;
     height: 80px;
     margin-top: 1px;
