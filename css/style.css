@@ -1,4 +1,6 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -18,17 +20,30 @@
 }
 .info1{
     width: 25%;
-    background-color: lightgray;
+    /*background-color: lightgray;*/
     height: 500px;
     margin-top: 1px;
     position: fixed; 
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size:30px ; 
 }
 h1{
-    font-family:'Tangerine', serif;
+    /*font-family:'Tangerine', serif;*/
+    font-family: 'Lobster', sans-serif;
     font-size: 48px;
     align-items: center;
     
+}
+/*.menu-lateral{
+    text-decoration: none;
+    color: black;
+}*/
+.menu-lateral{
+    display: block;
+    padding: 10px;
+     margin: 5px 0;
+    text-decoration: none;
+    color: #333;
 }
 
 .box2 {
@@ -43,10 +58,8 @@ h1{
     height: 100%;
 }
 .foto{
-    /*background-color: brown;*/
-    
     width: 100%;
-    height: 200px;
+    height: 223px;
     margin: 0px;
     display: flex; /* Utiliza el modelo de caja flexible para alinear elementos */
     justify-content: space-between; /* Distribuye el espacio disponible entre los elementos */
@@ -74,13 +87,9 @@ img {
     height: 95%;
     /*border: 2px solid black;*/
     margin-left: 2%;
-
-    
-        position: relative; /* Establece la posición relativa para que los botones se posicionen en relación con este contenedor */
-        text-align: right; /* Alinea el contenido a la derecha dentro del contenedor */
-        padding: 10px; /* Añade relleno para mejorar la apariencia */
-    
-
+    position: relative; /* Establece la posición relativa para que los botones se posicionen en relación con este contenedor */
+    text-align: right; /* Alinea el contenido a la derecha dentro del contenedor */
+    padding: 10px; /* Añade relleno para mejorar la apariencia */
 }
 .boton {
     background-color: #ddd; /* Color de fondo gris claro */
@@ -105,24 +114,24 @@ img {
     left: 10; /* Coloca el párrafo en la parte izquierda del contenedor */
     color: black; /* Color del texto "Nicolás" */
     margin: 0; /* Elimina el margen predeterminado del párrafo */
-    font-size: 45px;
-    /*display: flex;
-    flex-direction: column;*/
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 .uribe {
     color: green; 
     display: block;
     margin-top: -18px;
-    margin-right: 34px;
+    margin-right: 39px;
 }
 
 .descripcion {
     color: black;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: left; 
     margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }    
 
 
