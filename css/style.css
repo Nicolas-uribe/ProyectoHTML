@@ -47,9 +47,13 @@ h1{
     
     width: 100%;
     height: 200px;
-    /*margin: 1%;*/
-    padding: 20px;
     margin: 0px;
+    display: flex; /* Utiliza el modelo de caja flexible para alinear elementos */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px; /* Añade un poco de espacio alrededor del contenido del header */
+    color: #fff; /* Color del texto */
+    
 }
 .foto-perfil{
     display: inline-block;
@@ -68,17 +72,86 @@ img {
     display: inline-block;
     width: 70%;
     height: 95%;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     margin-left: 2%;
 
+    
+        position: relative; /* Establece la posición relativa para que los botones se posicionen en relación con este contenedor */
+        text-align: right; /* Alinea el contenido a la derecha dentro del contenedor */
+        padding: 10px; /* Añade relleno para mejorar la apariencia */
+    
+
+}
+.boton {
+    background-color: #ddd; /* Color de fondo gris claro */
+    padding: 10px 20px; /* Añade relleno para darle tamaño a los botones */
+    margin: 5px; /* Añade margen para separar los botones */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Añade bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima para indicar que es interactivo */
 }
 .menu{
-    background-color: brown;
+    /*background-color: brown;*/
     width: 100%;
-    height: 50px;
+    height: 80px;
     margin-top: 1px;
     /*margin: 1%;*/
     padding: 20px;
+}
+
+.nombre-logo {
+    position: absolute; /* Establece la posición absoluta para ubicar el párrafo en relación con el contenedor */
+    top: 10px; /* Coloca el párrafo en la parte superior del contenedor */
+    left: 10; /* Coloca el párrafo en la parte izquierda del contenedor */
+    color: black; /* Color del texto "Nicolás" */
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    font-size: 45px;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+.uribe {
+    color: green; 
+    display: block;
+    margin-top: -18px;
+    margin-right: 34px;
+}
+
+.descripcion {
+    color: black;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: left; 
+    margin-left: 5px;
+}    
+
+
+.opciones {
+    display: inline-block;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: #fff; 
+    text-align: center;
+    line-height: 80px; 
+    color: #333; 
+    text-decoration: none;
+    margin-right: 50px; 
+    border: 2px solid black;
+}
+.primer{
+    margin-left: 120px;
+    display: inline-block;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: #fff; 
+    text-align: center;
+    line-height: 80px; 
+    color: #333; 
+    text-decoration: none;
+    margin-right: 50px; 
+    border: 2px solid black;
 }
 
 .box3 {
