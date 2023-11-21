@@ -43,12 +43,34 @@ h1{
     height: 100%;
 }
 .foto{
-    background-color: brown;
+    /*background-color: brown;*/
+    
     width: 100%;
     height: 200px;
     /*margin: 1%;*/
     padding: 20px;
     margin: 0px;
+}
+.foto-perfil{
+    display: inline-block;
+    width: 25%;
+    height: 95%;
+    /*border: 2px solid black;*/
+}
+img {
+    width:100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+    height: 100%; /* La imagen también se ajusta al 100% de la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen se ajuste completamente al contenedor sin deformarla */
+    display: block;
+  }
+.info-perfil{
+    margin-top: 0;
+    display: inline-block;
+    width: 70%;
+    height: 95%;
+    border: 2px solid black;
+    margin-left: 2%;
+
 }
 .menu{
     background-color: brown;
