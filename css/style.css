@@ -183,10 +183,11 @@ main{
 }
 
 .tarjeta {
-    width: calc(33.33% - 2px); /* 1px de separación en cada lado */
+    width: calc(33.33% - 10px); /* 1px de separación en cada lado */
     height: 0; /* Altura inicial 0 para calcular el aspect ratio */
-    padding-bottom: calc(33.33% - 2px); /* Aspect ratio cuadrado y 1px de separación */
-    margin: 1px;
+    padding-bottom: calc(33.33% - 10px); /* Aspect ratio cuadrado y 1px de separación */
+    border-radius: 5%;
+    margin: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     overflow: hidden; /* Oculta el contenido que puede salir de la tarjeta */
@@ -196,8 +197,9 @@ main{
 
 .tarjeta:hover {
     background-color: #95a5a6; /* Color más oscuro */
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
+
 
 .tarjeta.expandida {
     width: 100%;
@@ -205,8 +207,15 @@ main{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
+    border-radius: 0;
+    margin-top: 0;
 }
+.tarjeta.tarjeta.expandida:hover {
+    /*background-color: #95a5a6; /* Color más oscuro */
+    transform: scale(1);
+}
+
 
 .tarjeta .contenido {
     display: none;
