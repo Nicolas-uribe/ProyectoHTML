@@ -192,11 +192,20 @@ main{
     transition: background-color 0.3s, transform 0.3s;
     overflow: hidden; /* Oculta el contenido que puede salir de la tarjeta */
     box-sizing: border-box; /* El padding se cuenta como parte del ancho y alto */
-    background-color:blue;
+    
+}
+.imagen-tarjeta{
+    display: inline-block; 
+}
+.img-tarjeta{
+    border-radius: 5%;
+    width: 100%;
+    height: 42vh;
+    object-fit: cover;
+    display: block;
 }
 
 .tarjeta:hover {
-    background-color: #95a5a6; /* Color más oscuro */
     transform: scale(1.06);
 }
 
@@ -210,22 +219,26 @@ main{
     z-index: 0;
     border-radius: 0;
     margin-top: 0;
+    background-color:aqua;
 }
-.tarjeta.tarjeta.expandida:hover {
-    /*background-color: #95a5a6; /* Color más oscuro */
+.tarjeta.expandida:hover {
+    
     transform: scale(1);
 }
-
-
-.tarjeta .contenido {
+.tarjeta.expandida a {
     display: none;
 }
 
-.tarjeta.expandida .contenido {
+.tarjeta.contenido {
+    display: none;
+}
+
+.tarjeta.expandida.contenido {
     display: block;
     text-align: center;
     padding: 20px;
 }
+
 
 .tarjeta.expandida h3 {
     font-size: 2em;
